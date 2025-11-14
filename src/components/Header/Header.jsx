@@ -1,5 +1,7 @@
 import "./style.css";
+
+const name = "CRYPTO";
 const Header = () => {
-  return <header className="header">Header</header>;
+  return <header className="header">{name}</header>;
 };
 export default Header;

@@ -1,8 +1,12 @@
-const Main = () => {
+import style from "./style.module.css";
+import Card from "../../components/Card/Card";
+
+const Main = ({ balance, setBalance }) => {
+  console.log(balance);
   return (
-    <>
-      <h3>Hellow</h3>;<p>World</p>
-    </>
+    <main className={style.main}>
+      <Card balance={balance} setBalance={setBalance} />
+    </main>
   );
 };
 export default Main;
